@@ -1,3 +1,4 @@
+package java8;
 
 class Person {
     public void walk() {

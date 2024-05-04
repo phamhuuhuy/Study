@@ -1,3 +1,5 @@
+package java8;
+
 class StaticVariable {
     public static String STATIC = "static";
 }

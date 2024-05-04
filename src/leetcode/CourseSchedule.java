@@ -35,17 +35,7 @@ public class CourseSchedule {
             map.get(prerequisites[i][0]).add(prerequisites[i][1]);
 
         }
-        map.forEach((k, v) -> {
-            System.out.print("k: ");
-            System.out.print(k);
-            System.out.print(", v: ");
-            v.forEach((h) -> {
-                System.out.print(h);
-                System.out.print(",");
-            });
-            System.out.println();
 
-        });
         Set<Integer> visited = new HashSet<>();
 
         for (int i = 0; i < numCourses; i++) {

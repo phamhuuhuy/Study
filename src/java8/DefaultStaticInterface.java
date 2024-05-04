@@ -1,3 +1,4 @@
+package java8;
 
 interface Interface1 {
     default void doSomething() {
@@ -62,6 +63,6 @@ public class DefaultStaticInterface {
         m.doSomething(); // Execute in Interface 1 , Interface 2
 
         MultiInheritance2 m1 = new MultiInheritance2();
-        m1.doSomething(); // Execute in Parent
+        m1.doSomething(); // Execute in java8.Parent
     }
 }

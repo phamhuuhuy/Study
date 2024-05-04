@@ -1,3 +1,4 @@
+package java8;
 
 interface Shape {
     void draw();

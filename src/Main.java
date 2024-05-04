@@ -1,7 +1,4 @@
-import leetcode.BinaryTreeLevelOrder;
-import leetcode.CourseSchedule;
-import leetcode.InorderBT;
-import leetcode.TreeNode;
+import leetcode.*;
 
 import java.util.Stack;
 
@@ -82,17 +79,22 @@ public class Main {
     }
     public static void main(String[] args) {
 //        InorderBT inorderBT = new InorderBT();
-//        TreeNode root = new TreeNode(5);
-//        root.left = new TreeNode(3);
-//        root.right = new TreeNode(7);
-//        root.left.left = new TreeNode(1);
-//        root.left.right = new TreeNode(4);
-//        root.left.left.right = new TreeNode(2);
-//        root.right.left = new TreeNode(6);
-//        root.right.right = new TreeNode(8);
-//        System.out.println(inorderBT.InorderTransverse(root));
+        Traversal traversal = new Traversal();
+        TreeNode root = new TreeNode(5);
+        root.left = new TreeNode(3);
+        root.right = new TreeNode(7);
+        root.left.left = new TreeNode(1);
+        root.left.right = new TreeNode(4);
+        root.left.left.right = new TreeNode(2);
+        root.right.left = new TreeNode(6);
+        root.right.right = new TreeNode(8);
+        System.out.println(traversal.dfsLeftToRightTraversal(root));
 
-        CourseSchedule courseSchedule = new CourseSchedule();
-        System.out.println(courseSchedule.canFinish(5, new int[][]{{0,10},{3,18},{5,5},{6,11},{11,14},{13,1},{15,1},{17,4}}));
+//         5
+//     3       7
+//   1   4    6  8
+//    2
+//        CourseSchedule courseSchedule = new CourseSchedule();
+//        System.out.println(courseSchedule.canFinish(5, new int[][]{{0,10},{3,18},{5,5},{6,11},{11,14},{13,1},{15,1},{17,4}}));
     }
 }
