@@ -28,26 +28,10 @@ public class SurroundedRegions {
                             return true;
                         }
                     }).toList();
-                    System.out.println("check-------");
-                    check.forEach((list) ->{
-                        System.out.println(list.get(0));
-                        System.out.println(list.get(1));
-                        });
-                    System.out.println(check.size());
-                    System.out.println("check-------");
                     if (check.size() == 0) {
-                        modify.forEach((list) ->{
-                            System.out.println("-------");
-                            System.out.println(list.get(0));
-                            System.out.println(list.get(1));
-                            board[list.get(0)][list.get(1)] = 'X';
-                            System.out.println("-------");});
+                        modify.forEach((list) -> board[list.get(0)][list.get(1)] = 'X');
                     }
-
-
-
                 }
-
             }
         }
 

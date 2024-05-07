@@ -15,14 +15,7 @@ public class KthSmallestBST {
                     s.push(curr);
                     curr = curr.left;
                 } else {
-                    System.out.print("Stack: ");
-                    s.forEach((val) -> {
-                        System.out.print(val.val);
-                        System.out.print(",");});
-                    System.out.println();
                     k--;
-
-
                     if (s.isEmpty()) break;
                     curr = s.peek();
                     if (k == 0) return curr.val;
@@ -30,12 +23,6 @@ public class KthSmallestBST {
                     s.pop();
                     curr = curr.right;
 
-
-                    System.out.print("list: ");
-                    inOrder.forEach((val) -> {
-                        System.out.print(val);
-                        System.out.print(",");});
-                    System.out.println();
                 }
             }
             return -1;
