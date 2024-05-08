@@ -69,6 +69,6 @@ class MainTest {
         graphRelation.register(5,4);
         graphRelation.register(6,5);
         graphRelation.print();
-        System.out.println(graphRelation.checkRelation(3,6));
+        System.out.println(graphRelation.checkRelation(1,1));
     }
 }

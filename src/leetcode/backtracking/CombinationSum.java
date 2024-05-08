@@ -19,10 +19,11 @@ public class CombinationSum {
             return;
         }
         for (int i = start; i < candidates.length; i++) {
-            if (target - sum < candidates[i]) continue;
+            if (target - sum < candidates[i]) break;
             temp.add(candidates[i]);
             backtrack(result, candidates, target, temp, sum + candidates[i], i);
             temp.remove(temp.size()-1);
         }
     }
+
 }
