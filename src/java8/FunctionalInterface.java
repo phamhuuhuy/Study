@@ -51,5 +51,7 @@ public class FunctionalInterface {
         Predicate<Integer> greaterThanEighteen = lessThanEighteen.negate();
 
         System.out.println(greaterThanEighteen.test(20));
+        People people = new People();
+        people.printh();
     }
 }

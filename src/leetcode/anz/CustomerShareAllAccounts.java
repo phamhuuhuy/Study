@@ -3,7 +3,17 @@ package leetcode.anz;
 // A set of customer/account pairs indicates which customers own which accounts.
 // In your choice of programming language, write the function that finds all customers who share all the same accounts.
 
+// {1:[10,11], 3:[10,11]}
 
+// "10-11": [1
+
+//On
+//Onlogn
+//nested O n square String
+
+// On On
+// Onlogn
+// O n square
 import java.util.*;
 import java.util.stream.Collectors;
 

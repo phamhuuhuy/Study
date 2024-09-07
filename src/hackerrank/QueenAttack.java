@@ -58,8 +58,9 @@ public class QueenAttack {
         }
 
 
-
         return result;
+
+
     }
 
     public static int queensAttack1(int n, int k, int r_q, int c_q, List<List<Integer>> obstacles) {

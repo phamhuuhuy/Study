@@ -48,6 +48,7 @@ class Inheritance implements Interface4 {
         Interface4.setLeg(5);
         System.out.println("quack quack");
     }
+
 }
 
 public class DefaultStaticInterface {
